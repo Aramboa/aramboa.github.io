@@ -4,7 +4,7 @@
 title: Aramboa website
 
 # Short description of your site
-description: A virtual proof that I'm awesome
+description: This is Aramboa`s mind. Discover a collection of selected works on the edge of nature and culture.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,7 +20,7 @@ description: A virtual proof that I'm awesome
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  About Me: I am I am I am I am I am I am I am I am I am I am I am I am ...
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
