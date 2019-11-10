@@ -4,10 +4,9 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hello internet! read too much information about me:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Aramboa is the alias of Vienna-based producer Moritz René Scharf. Being involved in music since his early childhood coming from a jazz background on guitar, he started producing and performing electronic music quickly. After a first release experimenting on the edge of electronica/downtempo, shaped by lively collaborations, especially with singer Elena Shirin, international festival appearances in Europe, the U.S. and South-Africa followed. Now he is off for presenting his latest studio-works where dreamy/artificial soundscapes and a catchy live brass-section collide into a beatdriven euphoric dancefloor experience. 
 
 What else do you need?
 
