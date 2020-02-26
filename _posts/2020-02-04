@@ -1,0 +1,61 @@
+import re, os
+
+source = "/Users/Aramboa/UE Digitial Humanities/HW_script/TEXT/"
+target = "/Users/Aramboa/UE Digitial Humanities/HW_script/TGN/"
+
+
+lof = os.listdir(source)
+counter = 0 # general counter to keep track of the progress
+
+def generate(filter):
+
+    topCountDictionary = {}
+
+    print(filter)
+    counter = 0
+    for f in lof:
+        if f.startswith("dltext"): # fileName test        
+            with open(source + f, "r", encoding="utf8") as f1:
+                text = f1.read()
+
+                text = text.replace("&amp;", "&")
+
+                # try to find the date
+                date = re.search(r'<date value="([\d-]+)"', text).group(1)
+                #print(date)
+
+                if date.startswith(filter):
+                    for tg in re.findall(r"(tgn,\d+)", text):
+                        tgn = tg.split(",")[1]
+
+                        if tgn in topCountDictionary:
+                            topCountDictionary[tgn] += 1
+                        else:
+                            topCountDictionary[tgn]  = 1
+
+                        #input(topCountDictionary)
+                    
+    top_TSV = []
+
+    for k,v in topCountDictionary.items():
+        val = "%09d\t%s" % (int(v/2), k)
+        # `tgn,XXXXX` occurs twice for every tagged toponym
+        # NB: unfortunately, there are some toponyms/placenames that are tagged,
+        #     but do not have tgn identifiers --- these will be missed;
+        #     # how can these be accounted for? 
+
+        top_TSV.append(val)                    
+
+    # saving
+    header = "freq\ttgn\n"
+    with open("dispatch_toponyms_%s.tsv" % filter, "w", encoding="utf8") as f9:
+        f9.write(header+"\n".join(top_TSV))
+    #print(counter)
+
+#generate("186") # - this will aggregate all data
+
+generate("186")
+
+
+
+Description: 
