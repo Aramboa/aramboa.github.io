@@ -1,3 +1,8 @@
+---
+layout: post
+title: Homework Lesson 8
+---
+
 import re, os
 
 source = "/Users/Aramboa/UE Digitial Humanities/HW_11/tgn_xml_1219/"
