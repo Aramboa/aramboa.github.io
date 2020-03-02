@@ -1,1 +1,1 @@
-<p><img src="https://drive.google.com/open?id=1pJ8GGMgvb3oIBVwHeJajV5dYVOS8rCBT" /></p>
+<img src="https://raw.githubusercontent.com/Aramboa/aramboa.github.io/master/images/77182921_2741710885886711_4077090889338454016_n.png" alt="screenshot">
